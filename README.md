@@ -28,6 +28,18 @@ Building *requires*:
   
 Please ensure that `pip` and `scikit-build` are up to date and are a recent version.
 
+Building the library on MacOS can be done with:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+make install
+```
+
+This will install to CMake's default install prefix, ```/usr/local```. To change the prefix, set the flag ```-DCMAKE_INSTALL_PREFIX=path```, being ```path``` your preferred destination.
+
 *Optional*:
 
 If CMake is not already available on you system it can be installed with pip. Additionally, the [Ninja](https://ninja-build.org) build tool is recommened for it's parallel build efficiency. These can be easily installed with:
